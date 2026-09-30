@@ -1,0 +1,14 @@
+{
+ "lecture":{"label":"CS50x Week 3: Algorithms","url":"https://cs50.harvard.edu/x/weeks/3/"},
+ "sequence":[{"type":"dialogue","id":"intro"},{"type":"game","id":0},{"type":"dialogue","id":"mid"},{"type":"game","id":1},{"type":"dialogue","id":"outro"}],
+ "dialogue":{
+  "intro":[{"who":"Narrator","text":"The Sorting Yards are in chaos. Crates pile up in random order, and the night shift can't find anything."},
+   {"who":"Duck","text":"Quack. Start small: the crane can only swap two neighbouring crates. What order would you fix them in?"}],
+  "mid":[{"who":"Foreman","text":"Nice work. Now the real trouble: a single crate is missing from a long sorted aisle."},
+   {"who":"Duck","text":"Quack. Checking crates one by one is slow. A sorted row lets you throw half of them away with every look."}],
+  "outro":[{"who":"Foreman","text":"You just used the idea behind binary search: sorted data pays you back in speed."},
+   {"who":"Duck","text":"Quack. Next stop: Warehouse Row, where memory gets messy."}]},
+ "games":[
+  {"type":"sortCrates","title":"Fix the Conveyor","instructions":"Click a crate, then a neighbour to swap. Sort ascending. Beat par for 3 stars.","crates":[5,2,4,1,3],"par":8,"budget":12},
+  {"type":"searchCrates","title":"Find Crate 37","instructions":"Crates are sorted but hidden. Click to reveal one. You only get 4 probes; a left-to-right scan won't make it.","crates":[3,8,12,17,21,26,30,33,37,41,45,50,54,58,63],"target":37,"par":3,"budget":4}]
+}

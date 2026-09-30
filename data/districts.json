@@ -1,0 +1,13 @@
+[
+ {"week":0,"name":"Toy Workshop","topic":"Scratch","theme":"pixel","status":"todo","file":"data/districts/week0.json"},
+ {"week":1,"name":"Foundry","topic":"C","theme":"pixel","status":"todo","file":"data/districts/week1.json"},
+ {"week":2,"name":"Cipher Quarter","topic":"Arrays","theme":"pixel","status":"todo","file":"data/districts/week2.json"},
+ {"week":3,"name":"Sorting Yards","topic":"Algorithms","theme":"pixel","status":"ready","file":"data/districts/week3.json"},
+ {"week":4,"name":"Warehouse Row","topic":"Memory","theme":"pixel","status":"todo","file":"data/districts/week4.json"},
+ {"week":5,"name":"Transit Hub","topic":"Data Structures","theme":"pixel","status":"todo","file":"data/districts/week5.json"},
+ {"week":6,"name":"Library","topic":"Python","theme":"pixel","status":"todo","file":"data/districts/week6.json"},
+ {"week":7,"name":"Detective Bureau","topic":"SQL","theme":"noir","status":"todo","file":"data/districts/week7.json"},
+ {"week":8,"name":"Billboard Boulevard","topic":"HTML/CSS/JS","theme":"pixel","status":"todo","file":"data/districts/week8.json"},
+ {"week":9,"name":"Control Tower","topic":"Flask","theme":"pixel","status":"todo","file":"data/districts/week9.json"},
+ {"week":10,"name":"The Oracle","topic":"Artificial Intelligence","theme":"pixel","status":"todo","file":"data/districts/week10.json"}
+]

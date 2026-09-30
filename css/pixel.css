@@ -1,0 +1,16 @@
+.theme-pixel{background:#6fb1ff linear-gradient(#6fb1ff 0 60%,#5d9b3a 60% 64%,#7a5230 64%);color:#1b1b1b;
+ font-family:"Courier New",monospace;image-rendering:pixelated}
+.theme-pixel header{background:#3b3b3b;color:#fff;border-bottom:6px solid #222}
+.theme-pixel footer{background:#3b3b3b;color:#ddd}
+.theme-pixel footer a{color:#9fe870}
+.theme-pixel button,.theme-pixel .tile{background:#8b8b8b;color:#111;border:4px solid;border-color:#d0d0d0 #4a4a4a #4a4a4a #d0d0d0;border-radius:0;font-weight:bold}
+.theme-pixel button:hover:not([disabled]){background:#a5b8ff}
+.theme-pixel .dialogue,.theme-pixel .panel{background:#c6a06b;border:6px solid #5a3d1c;box-shadow:inset 0 0 0 4px #e0c08c}
+.theme-pixel .panel{padding:1rem}
+.theme-pixel .crate{background:#b07a3c;border:4px solid;border-color:#d9a25c #6b4520 #6b4520 #d9a25c;color:#fff;text-shadow:2px 2px #3b2510;cursor:pointer}
+.theme-pixel .crate.sel{outline:4px solid #ffe14a}
+.theme-pixel .crate.ok{background:#4c9a2a}
+.theme-pixel .crate.hidden{background:#555;color:#555;text-shadow:none}
+.theme-pixel .crate.dim{opacity:.25}
+.theme-pixel .crate.hit{background:#e0b020}
+.theme-pixel .msg.good{color:#0a5a0a}.theme-pixel .msg.bad{color:#8a1010}
