@@ -2,8 +2,12 @@ import {playDialogue} from "./engine/story.js";
 import {load,complete} from "./engine/save.js";
 import * as sortCrates from "./minigames/sortCrates.js";
 import * as searchCrates from "./minigames/searchCrates.js";
+import * as memoryShelves from "./minigames/memoryShelves.js";
+import * as pointerPost from "./minigames/pointerPost.js";
+import * as sqlCase from "./minigames/sqlCase.js";
 
-const GAMES={sortCrates,searchCrates};
+const GAMES={sortCrates,searchCrates,memoryShelves,pointerPost,sqlCase};
+const DEV_UNLOCK_ALL=true; // set to false to require clearing districts in order
 const stage=document.getElementById("stage");
 const nav=document.getElementById("nav");
 const getJSON=u=>fetch(u).then(r=>r.json());
@@ -16,9 +20,9 @@ async function showMap(){
  stage.innerHTML=`<h2>Choose a district</h2><div class="map" id="map"></div>`;
  const map=stage.querySelector("#map");
  world.forEach((d,i)=>{const b=document.createElement("button");b.className="tile";
-  const unlocked=d.status==="ready"&&(i===0||s.done[world[i-1].week]||d.week===3);
+  const unlocked=d.status==="ready"&&(DEV_UNLOCK_ALL||i===0||s.done[world[i-1].week]);
   b.disabled=!unlocked;
-  b.innerHTML=`<div>Week ${d.week}</div><b>${d.name}</b><div>${"★".repeat(s.stars[d.week]||0)||d.topic}</div>`;
+  b.innerHTML=`<div>Week ${d.week}</div><b>${d.name}</b><div>${"\u2605".repeat(s.stars[d.week]||0)||d.topic}</div>`;
   b.onclick=()=>playDistrict(d);map.append(b)});
 }
 
@@ -29,7 +33,7 @@ async function playDistrict(d){
  const steps=[...data.sequence];
  const next=()=>{const st=steps.shift();
   if(!st){const stars=Math.round(total/data.games.length);complete(d.week,stars);
-   scene.innerHTML=`<div class="dialogue">District cleared ${"★".repeat(stars)}</div><button id="back">Back to map</button>`;
+   scene.innerHTML=`<div class="dialogue">District cleared ${"\u2605".repeat(stars)}</div><button id="back">Back to map</button>`;
    scene.querySelector("#back").onclick=showMap;return}
   scene.innerHTML="";
   if(st.type==="dialogue")playDialogue(scene,data.dialogue[st.id],next);

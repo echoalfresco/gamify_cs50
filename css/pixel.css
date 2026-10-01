@@ -14,3 +14,8 @@
 .theme-pixel .crate.dim{opacity:.25}
 .theme-pixel .crate.hit{background:#e0b020}
 .theme-pixel .msg.good{color:#0a5a0a}.theme-pixel .msg.bad{color:#8a1010}
+.theme-pixel .order{background:#5a3d1c;color:#ffe9b8;padding:.6rem .8rem;margin:.6rem 0;font-weight:bold}
+.theme-pixel .crate.shelf{background:#7a7a7a;border-color:#a8a8a8 #3d3d3d #3d3d3d #a8a8a8;width:72px;height:72px;text-shadow:none;color:#fff}
+.theme-pixel .crate.shelf.full{background:#b07a3c;border-color:#d9a25c #6b4520 #6b4520 #d9a25c;text-shadow:2px 2px #3b2510}
+.theme-pixel .crate.addr{flex-direction:column;gap:2px;width:84px;height:84px;font-size:1rem}
+.theme-pixel .crate.addr small{font-size:.65rem;opacity:.9}
