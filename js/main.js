@@ -7,8 +7,14 @@ import * as pointerPost from "./minigames/pointerPost.js";
 import * as sqlCase from "./minigames/sqlCase.js";
 import * as linkedTrain from "./minigames/linkedTrain.js";
 import * as hashLockers from "./minigames/hashLockers.js";
+import * as robotGrid from "./minigames/robotGrid.js";
+import * as binaryLamps from "./minigames/binaryLamps.js";
+import * as bugHunt from "./minigames/bugHunt.js";
+import * as orderCards from "./minigames/orderCards.js";
+import * as caesarWheel from "./minigames/caesarWheel.js";
+import * as stringIndex from "./minigames/stringIndex.js";
 
-const GAMES={sortCrates,searchCrates,memoryShelves,pointerPost,sqlCase,linkedTrain,hashLockers};
+const GAMES={sortCrates,searchCrates,memoryShelves,pointerPost,sqlCase,linkedTrain,hashLockers,robotGrid,binaryLamps,bugHunt,orderCards,caesarWheel,stringIndex};
 const DEV_UNLOCK_ALL=true; // set to false to require clearing districts in order
 const stage=document.getElementById("stage");
 const nav=document.getElementById("nav");
