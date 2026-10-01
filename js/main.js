@@ -13,8 +13,12 @@ import * as bugHunt from "./minigames/bugHunt.js";
 import * as orderCards from "./minigames/orderCards.js";
 import * as caesarWheel from "./minigames/caesarWheel.js";
 import * as stringIndex from "./minigames/stringIndex.js";
+import * as pyRunner from "./minigames/pyRunner.js";
+import * as htmlLab from "./minigames/htmlLab.js";
+import * as quiz from "./minigames/quiz.js";
+import * as claimCheck from "./minigames/claimCheck.js";
 
-const GAMES={sortCrates,searchCrates,memoryShelves,pointerPost,sqlCase,linkedTrain,hashLockers,robotGrid,binaryLamps,bugHunt,orderCards,caesarWheel,stringIndex};
+const GAMES={sortCrates,searchCrates,memoryShelves,pointerPost,sqlCase,linkedTrain,hashLockers,robotGrid,binaryLamps,bugHunt,orderCards,caesarWheel,stringIndex,pyRunner,htmlLab,quiz,claimCheck};
 const DEV_UNLOCK_ALL=true; // set to false to require clearing districts in order
 const stage=document.getElementById("stage");
 const nav=document.getElementById("nav");
