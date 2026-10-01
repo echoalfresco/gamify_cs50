@@ -5,8 +5,10 @@ import * as searchCrates from "./minigames/searchCrates.js";
 import * as memoryShelves from "./minigames/memoryShelves.js";
 import * as pointerPost from "./minigames/pointerPost.js";
 import * as sqlCase from "./minigames/sqlCase.js";
+import * as linkedTrain from "./minigames/linkedTrain.js";
+import * as hashLockers from "./minigames/hashLockers.js";
 
-const GAMES={sortCrates,searchCrates,memoryShelves,pointerPost,sqlCase};
+const GAMES={sortCrates,searchCrates,memoryShelves,pointerPost,sqlCase,linkedTrain,hashLockers};
 const DEV_UNLOCK_ALL=true; // set to false to require clearing districts in order
 const stage=document.getElementById("stage");
 const nav=document.getElementById("nav");

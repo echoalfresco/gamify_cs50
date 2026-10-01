@@ -1,0 +1,8 @@
+.theme-pixel .train{display:flex;flex-wrap:wrap;align-items:center;gap:.3rem;margin:.6rem 0}
+.theme-pixel .car{background:#c0392b;color:#fff;border:4px solid;border-color:#e57368 #7a1f16 #7a1f16 #e57368;padding:.5rem .8rem;font-weight:bold;text-shadow:2px 2px #5a150f}
+.theme-pixel .car.nil{background:#555;border-color:#888 #333 #333 #888;text-shadow:none}
+.theme-pixel .link{font-weight:bold;font-size:1.2rem}
+.theme-pixel .lockers{gap:.6rem}
+.theme-pixel .locker{background:#7a7a7a;border:4px solid;border-color:#a8a8a8 #3d3d3d #3d3d3d #a8a8a8;width:104px;min-height:120px;padding:.4rem;cursor:pointer;color:#fff;text-shadow:2px 2px #333}
+.theme-pixel .locker b{display:block;margin-bottom:.3rem}
+.theme-pixel .tag{display:block;background:#b07a3c;border:2px solid #6b4520;margin:2px 0;padding:1px 4px;font-size:.85rem}
