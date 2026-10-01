@@ -2,6 +2,9 @@
 
 A retro-pixel narrative game that turns the lectures of CS50x into a city you can explore. There are eleven districts, one per lecture week, each with short mini-games and a rubber duck who gives hints without giving the answer.
 
+<img width="1147" height="701" alt="image" src="https://github.com/user-attachments/assets/3b9ac59b-719e-4990-b71c-56494384b245" />
+
+
 **Play it:** https://gamifycs50.vercel.app/
 
 > Unofficial fan project. Not affiliated with or endorsed by Harvard University or CS50.
